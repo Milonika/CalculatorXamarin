@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalculatorXamarin.MainPage">
+    <StackLayout>
+        <Frame BackgroundColor="White" Padding="15" Margin="0,0,0,20">
+            <Label Text="0"
+                   FontSize="25"
+                   FontAttributes="Bold"
+                   HorizontalOptions="End">
+            </Label>
+        </Frame>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Row="0"
+                Grid.Column="0"
+                Text="C"/>
+            <Button Grid.Row="0"
+                Grid.Column="1"
+                Text="*"/>
+            <Button Grid.Row="0"
+                Grid.Column="2"
+                Text="+"/>
+            <Button Grid.Row="0"
+                Grid.Column="3"
+                Text="/"/>
+            
+            <!--2 row-->
+            <Button Grid.Row="1"
+                Grid.Column="0"
+                Text="1"/>
+            <Button Grid.Row="1"
+                Grid.Column="1"
+                Text="2"/>
+            <Button Grid.Row="1"
+                Grid.Column="2"
+                Text="3"/>
+            <Button Grid.Row="1"
+                Grid.Column="3"
+                Text="-"/>
+
+            <!--3 row-->
+            <Button Grid.Row="2"
+                Grid.Column="0"
+                Text="5"/>
+            <Button Grid.Row="2"
+                Grid.Column="1"
+                Text="6"/>
+            <Button Grid.Row="2"
+                Grid.Column="2"
+                Text="7"/>
+            <Button Grid.Row="2"
+                Grid.Column="3"
+                Text="="/>
+
+            <!--4 row-->
+            <Button Grid.Row="3"
+                Grid.Column="0"
+                Text="8"
+                Padding="35"/>
+            <Button Grid.Row="3"
+                Grid.Column="1"
+                Text="9"
+                Padding="35"/>
+            <Button Grid.Row="3"
+                Grid.Column="2"
+                Text="0"
+                Padding="35"/>
+
+
+        </Grid>
+    </StackLayout>
+
+
+</ContentPage>
