@@ -3,13 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CalculatorXamarin.MainPage">
     <StackLayout>
-        <Frame BackgroundColor="White" Padding="15" Margin="0,0,0,20">
+        <Frame BackgroundColor="White" Padding="20" Margin="0,0,0,20">
             <Label Text="0"
                    FontSize="25"
                    FontAttributes="Bold"
-                   HorizontalOptions="End">
-            </Label>
+                   HorizontalOptions="End"
+                   x:Name="LbResult"/>
         </Frame>
+        
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition/>
@@ -24,6 +25,7 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
+            
             <Button Grid.Row="0"
                 Grid.Column="0"
                 Text="C"/>
@@ -40,16 +42,22 @@
             <!--2 row-->
             <Button Grid.Row="1"
                 Grid.Column="0"
-                Text="1"/>
+                Text="1"
+                Padding="35"
+                    x:Name="BtnOne"
+                    Clicked="BtnOne_Clicked"/>
             <Button Grid.Row="1"
                 Grid.Column="1"
-                Text="2"/>
+                Text="2"
+                Padding="35"/>
             <Button Grid.Row="1"
                 Grid.Column="2"
-                Text="3"/>
+                Text="3"
+                Padding="35"/>
             <Button Grid.Row="1"
                 Grid.Column="3"
-                Text="-"/>
+                Text="-"
+                Padding="35"/>
 
             <!--3 row-->
             <Button Grid.Row="2"
@@ -63,17 +71,16 @@
                 Text="7"/>
             <Button Grid.Row="2"
                 Grid.Column="3"
+                Grid.RowSpan="2"
                 Text="="/>
 
             <!--4 row-->
             <Button Grid.Row="3"
                 Grid.Column="0"
-                Text="8"
-                Padding="35"/>
+                Text="8"/>
             <Button Grid.Row="3"
                 Grid.Column="1"
-                Text="9"
-                Padding="35"/>
+                Text="9"/>
             <Button Grid.Row="3"
                 Grid.Column="2"
                 Text="0"
