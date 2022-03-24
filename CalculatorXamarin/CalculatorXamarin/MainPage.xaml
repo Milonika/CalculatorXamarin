@@ -78,8 +78,6 @@
                 Grid.Column="2"
                 Text="0"
                 Padding="35"/>
-
-
         </Grid>
     </StackLayout>
 
